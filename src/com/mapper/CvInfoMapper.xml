@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mapper.CvInfoMapper">
+    <insert id="insert" parameterType="CvInfo" >
+        insert into CvInfo ( name,sex,bornTime,workTime,bornLocation,liveLocation,phoneNumber,
+                              email,constellation,threeNumber, nickName )
+        values (#{name},#{sex},#{bornTime},#{workTime},#{bornLocation},#{liveLocation},#{phoneNumber},
+                #{email},#{constellation},#{threeNumber},#{nickName})
+    </insert>
+
+
+    <update id="update" parameterType="CvInfo">
+        update CvInfo set name = #{name},sex=#{sex},bornTime = #{bornTime},workTime = #{workTime},bornLocation = #{bornLocation},
+                           liveLocation = #{liveLocation},phoneNumber = #{phoneNumber},email = #{email},
+                           constellation = #{constellation},threeNumber = #{threeNumber}
+        where nickName = #{nickName};
+    </update>
+    <!--collection="list"表示传入的参数是链表-->
+    <delete id="delete" parameterType="int">
+       delete from CvInfo where id in
+        <foreach item = "idItem" collection="array"  open="(" separator="," close=")">#{ idItem}
+        </foreach>
+    </delete>
+    <delete id="deleteByNickname" parameterType="String">
+        delete from CvInfo where nickName in
+        <foreach item = "idItem" collection="list"  open="(" separator="," close=")">#{ idItem}
+        </foreach>
+    </delete>
+
+
+    <select id="select" resultType="CvInfo">
+        select * from   CvInfo where nickName like #{nickName}
+    </select>
+
+    <select id="selectByName" resultType="CvInfo">
+        select * from   CvInfo where name like #{name}
+    </select>
+
+    <select id="list" resultType="CvInfo">
+        select * from   CvInfo
+    </select>
+
+</mapper>
