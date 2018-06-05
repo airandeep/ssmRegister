@@ -1,0 +1,62 @@
+.top{width: 990px; margin: 0 auto;  background-color: #FFB90F; height: 56px; padding: 6px 0px;}
+.header{  line-height: 56px;}
+
+.logo{ width:20%; 	float:left;	padding-left: 20px; height:46px;}
+.heaer_con{width:30%; float:left;  color: #FFF	; padding-left: 190px; font-size: 18px; }
+.heaer_right{ float:right;color:#FFF; padding-right: 20px; font-size: 14px; text-decoration: underline; }
+
+.main{ width:990px; margin: 0 auto;}
+.main01{  padding: 10px 0px 10px 200px;  background-color:#E8E8E8; height: 40px; line-height: 40px;  color: #000000;}
+.f1{ float:left;}
+.fr{ float:right;}
+.main02{   overflow: hidden; padding: 22px 0px 16px 160px;}
+.main02 ul{ width:100%; overflow:hidden;}
+.main02 ul li span.wid216{ width: 216px; display:block; height: 8px; overflow:hidden; margin-top:5px;}
+.main02 ul li{ float: left; width: 216px; margin-right: 2px;height:32px;} 
+.main02 ul li.widno{ width: inherit; padding-top: 10px; padding-left: 20px;}
+.color01{ background-color: #a1df34;}
+.color02{ background-color:#e8e7e7;}
+
+.main02Plus{ background-color:#E8E8E8; height: 20px; line-height: 40px;  color: #000000; padding-right: 20px;}
+
+.main03{ margin-top: 22px;  background-color: #E8E8E8;}
+.main03_Pad{background-color: #FFFF00; padding: 10px 0px 10px 10px; }
+.wid10{position: relative; left: 18px; width:50%; height:40px;}
+.mainForm{padding: 10px 0px 10px 120px;}
+.main03{ margin-top: 10px;}
+.main03_Pad{ padding: 30px 0px 30px 50px; background-color: #fff;}
+.main03 h1{ font-size: 24px;  padding-left: 360px; padding-bottom: 33px;}
+.mainForm li { height: 53px;}
+.mainForm li input{  border:1px solid #cccccc; padding: 10px 0px 10px 10px;}
+.mainForm li div{float: left;}
+.mainForm li .radio_group_container{ width: 420px; padding-top: 10px;}
+.mainForm li span.widcheck{ width: 70px; height:50px; overflow:hidden; text-align: left; margin-right:50px;  }
+.mainForm li .wid350{float:left;width:420px; }
+.mainForm  li>span{display: inline-block;  float: left; width: 100px;  text-align: right; padding-right: 18px; line-height: 43px;}
+.mainForm  li span font{ color: #ff0000;}
+.msg {list-style-type:none;}
+
+a.btn_next{ margin-top: 20px; margin-bottom: 80px; cursor: pointer;  margin-left: 300px; border-radius: 5px; display: inline-block; color: #fff; font-size: 24px; width: 190px; height: 50px; background-color: #ffa317; text-align: center; line-height: 50px;}
+.btnStyle
+{
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+	background-repeat: repeat;
+	background-color: transparent;
+	cursor: pointer;
+	background-image:url(../images/next.png);
+}
+.btnStyle1
+{
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+	background-repeat: repeat;
+	background-color: transparent;
+	cursor: pointer;
+	background-image:url(../images/over.png);
+}
+.main03_Pad2{ padding: 10px 0px 10px 200px; }
