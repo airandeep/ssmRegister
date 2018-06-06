@@ -32,8 +32,7 @@ public class LoginController {
     UserManageService userManageService;
     @Autowired
     PublicObject myPublicObject;
-//    @Autowired
-//    ReadXMLByDom4j readXMLByDom4j;
+
 
     @RequestMapping("LoginView")
     public ModelAndView login(){
