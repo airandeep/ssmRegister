@@ -12,4 +12,8 @@
         <name>戴小黑</name>
         <pwd>1234567890</pwd>
     </user>
+    <user id="4">
+        <name>戴小黑</name>
+        <pwd>1234567890</pwd>
+    </user>
 </users>
